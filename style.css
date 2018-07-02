@@ -1,0 +1,25 @@
+
+body{
+    background-color: aquamarine;
+}
+h1{
+    text-align: center;
+    color: darkgreen;
+}
+#hero{
+    width:500px;
+    height:300px ;
+    margin: 0 auto;
+    text-align: center;
+    color: darkgreen;
+}
+button{
+    padding: 0;
+    border: none;
+    margin:0 auto;
+    background-color: darkgreen;
+    width:200px;
+    height: 50px;
+    
+    
+}
