@@ -1,13 +1,17 @@
 
 function httpRequest(){
+    var result = document.querySelector("h3");
     var XHR = new XMLHttpRequest();
+    XHR.onreadystatechange = function(){
+        if(XHR.readyState == 4){
+            if(XHR.status == 200){
+            result.innerHTML = XHR.responseText;
 
-XHR.onreadystatechange = function(){
-    if(XHR.readyState == 4){
-
-     var result = document.querySelector("h3");
-     result.innerHTML = XHR.responseText;
-
+            }else{
+                result.innerHTML = "Something Went Wrong..."
+                
+            }
+        
     }
 }
 
